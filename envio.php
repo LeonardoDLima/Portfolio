@@ -20,7 +20,7 @@ if (isset($_POST['enviar'])) {
         $mail->Host       = 'smtp-mail.outlook.com';                     //Set the SMTP server to send through
         $mail->SMTPAuth   = true;                                   //Enable SMTP authentication
         $mail->Username   = 'leonardodlima615@hotmail.com';                     //SMTP username
-        $mail->Password   = 'apfb iinl yjeo tbnv';                               //SMTP password
+        $mail->Password   = '';                               //SMTP password
         //$mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;            //Enable implicit TLS encryption
         //$mail->Port       = 465;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;            //Enable implicit TLS encryption

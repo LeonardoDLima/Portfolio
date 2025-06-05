@@ -70,19 +70,19 @@
                 <div class="servicos-box">
                     <i class="bi bi-filetype-php"></i>
                     <h3>PHP</h3>
-                    <p>texto aqui</p>
+                    <!--<p>texto aqui</p>-->
                 </div>
         
                 <div class="servicos-box">
                     <i class="bi bi-filetype-css"></i>
                     <h3>CSS</h3>
-                    <p>texto aqui</p>
+                    <!--<p>texto aqui</p>-->
                 </div>
         
                 <div class="servicos-box">
                     <i class="bi bi-filetype-js"></i>
                     <h3>JAVASCRIPT</h3>
-                    <p>texto aqui</p>
+                    <!--<p>texto aqui</p>-->
                 </div>
             </div>            
         </section>

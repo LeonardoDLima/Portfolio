@@ -93,10 +93,10 @@
             <div class="portifolio-banner">
 
                 <div class="portifolio-slider" style="--quantity: 4">
-                    <div class="item" style="--position: 1">
-                        <a href="#"><img src="imagens/portifolio1.png" alt=""></a>
-                    </div>
                     <div class="item" style="--position: 2">
+                        <img src="imagens/portifolio1.png" alt=""></a>
+                    </div>
+                    <div class="item" style="--position: 1">
                     <a href="portifolio02.php"><img src="imagens/portifolio2.png" alt=""></a>
                     </div>
                     <div class="item" style="--position: 3">

@@ -97,7 +97,7 @@
                         <img src="imagens/portifolio1.png" alt=""></a>
                     </div>
                     <div class="item" style="--position: 1">
-                    <a href="portifolio02.php"><img src="imagens/portifolio2.png" alt=""></a>
+                        <a href="portifolio02.php"><img src="imagens/portifolio2.png" alt=""></a>
                     </div>
                     <div class="item" style="--position: 3">
                         <img src="imagens/portifolio3.png" alt="">

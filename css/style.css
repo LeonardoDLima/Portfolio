@@ -619,6 +619,11 @@ path.leaflet-interactive{
     font-size: 20px;
     color: var(--main-color);
 }
+#km{
+    text-align: center;
+    font-size: 20px;
+    color: var(--main-color);
+}
 
 .leaflet-marker-icon.leaflet-zoom-animated.leaflet-interactive.leaflet-marker-draggable{
     display: none;

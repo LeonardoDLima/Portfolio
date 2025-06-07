@@ -39,9 +39,9 @@
                 <p>Uma mente que se abre a uma nova ideia, jamais voltará ao seu tamanho original. 
 "Albert Einstein"</p>
                 <div class="midia-social">
-                    <a href="https://www.facebook.com/leonardo.duartedelima.1"><i class="bi bi-facebook"></i></a>
-                    <a href="https://x.com/LeoDuarteLima"><i class="bi bi-twitter-x"></i></a>
-                    <a href="https://www.instagram.com/leoduartel/"><i class="bi bi-instagram"></i></a>
+                    <a href="https://www.facebook.com/leonardo.duartedelima.1" target="_blank"><i class="bi bi-facebook"></i></a>
+                    <a href="https://x.com/LeoDuarteLima" target="_blank"><i class="bi bi-twitter-x"></i></a>
+                    <a href="https://www.instagram.com/leoduartel/" target="_blank"><i class="bi bi-instagram"></i></a>
                 </div>
                 <a href="#" class="btn">Download CV</a>
             </div>
@@ -59,7 +59,7 @@
                 <h2 class="cabecario">Sobre <span>Mim</span></h2>
                 <h3>Grande sonhador!</h3>
                 <p>Uma pessoa dedicada e batalhadora, sempre procurando melhorar minhas habilidades para ser um bom profissional, rapido para aprender novas habilidades e muito focado, sou bem sociavel e não meço esforços para atingir meus objetivos.</p>
-                <a href="#" class="btn">Consulte Mais informação</a>
+                <a href="#contato" class="btn">Consulte Mais informação</a>
             </div>
         </section>
 

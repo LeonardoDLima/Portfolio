@@ -628,3 +628,15 @@ path.leaflet-interactive{
 .leaflet-marker-icon.leaflet-zoom-animated.leaflet-interactive.leaflet-marker-draggable{
     display: none;
 }
+#mensagem-status.fade {
+    opacity: 1;
+}
+
+#loader {
+    font-style: italic;
+    color: blue;
+}
+.fade {
+    opacity: 1 !important;
+    transition: opacity 0.5s ease-in-out;
+}

@@ -101,7 +101,7 @@ const identificadorTelefone = (event) => {
     return value
   }
 
-  /*======================== Simular envio ===================================*/
+  /*======================== envio ===================================*/
   document.getElementById('form-contato').addEventListener('submit', function (e) {
     e.preventDefault();
 

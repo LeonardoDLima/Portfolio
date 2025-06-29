@@ -645,5 +645,14 @@ path.leaflet-interactive{
     background-color: black;
     border-radius: 5px;
     box-shadow: none;
-    margin: 3rem 1.5rem 3rem 0;
+    margin: 3rem 0 3rem 0;
+    transition: .5s ease;
+}
+.btn-github:hover{
+    color: white;
+    background-color: black;
+    border-radius: 5px;
+    box-shadow: none;
+    margin: 3rem 0 3rem 0;
+    font-size: 15px;
 }

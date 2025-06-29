@@ -41,7 +41,7 @@ ScrollReveal({
 });
 
 ScrollReveal().reveal('.inicio-content, .cabecario', {  origin: 'top'});
-ScrollReveal().reveal('.inicio-img, .servicos-container, .portifolio-box, .contato form, #mapid', {  origin: 'bottom'});
+ScrollReveal().reveal('.inicio-img, .servicos-container, .portfolio-box, .contato form, #mapid', {  origin: 'bottom'});
 ScrollReveal().reveal('.inicio-content h1, .sobre-img, #txtDistancia', {  origin: 'left'});
 ScrollReveal().reveal('.inicio-content p, .sobre-content, #distancia', {  origin: 'right'});
 /*============================== animação de texto digitado js =============================================*/
@@ -53,11 +53,11 @@ const typed =new Typed('.multiple-text', {
     //loop: true
 });
 
-/*============================= botào navegação portifolio =========================*/
+/*============================= botào navegação portfolio =========================*/
 
 const btnProx = document.querySelector(".btnProxFt");
 const btnAnte = document.querySelector(".btnAnteFt");
-const slider = document.querySelector(".portifolio-slider");
+const slider = document.querySelector(".portfolio-slider");
 
 let rotateDeg = 0;
 btnAnte.addEventListener('click', () => {

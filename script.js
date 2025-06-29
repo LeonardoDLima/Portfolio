@@ -101,4 +101,71 @@ const identificadorTelefone = (event) => {
     return value
   }
 
-  /*======================== Mapa ===================================*/
+  /*======================== Simular envio ===================================*/
+  document.getElementById('form-contato').addEventListener('submit', function (e) {
+    e.preventDefault();
+
+    const form = e.target;
+    const nome = form.nome.value.trim();
+    const email = form.email.value.trim();
+    const telefone = form.telefone.value.trim();
+    const assunto = form.assunto.value.trim();
+    const mensagem = form.mensagem.value.trim();
+
+    const status = document.getElementById('mensagem-status');
+    const loader = document.getElementById('loader');
+
+    if (nome && email && assunto && mensagem) {
+        // Mostrar loader
+        loader.style.display = 'block';
+        status.style.opacity = 0;
+
+        // Simulando envio (2 segundos)
+        setTimeout(() => {
+            // Ocultar loader
+            loader.style.display = 'none';
+
+            // Exibir mensagem de sucesso com fade-in
+            status.innerText = 'Mensagem enviada com sucesso!';
+            status.style.color = 'green';
+            status.classList.add('fade');
+
+            // Salvar no localStorage
+            salvarMensagemLocal(nome, email, telefone, assunto, mensagem);
+
+            // Limpar formulário
+            form.reset();
+
+            // Ocultar mensagem após 3 segundos (fade-out)
+            setTimeout(() => {
+                status.classList.remove('fade');
+            }, 3000);
+
+        }, 2000);
+    } else {
+        status.innerText = 'Por favor, preencha todos os campos obrigatórios.';
+        status.style.color = 'red';
+        status.classList.add('fade');
+
+        setTimeout(() => {
+            status.classList.remove('fade');
+        }, 3000);
+    }
+});
+
+// Função para salvar a mensagem no localStorage
+function salvarMensagemLocal(nome, email, telefone, assunto, mensagem) {
+    const mensagensSalvas = JSON.parse(localStorage.getItem('mensagens')) || [];
+
+    const novaMensagem = {
+        nome: nome,
+        email: email,
+        telefone: telefone,
+        assunto: assunto,
+        mensagem: mensagem,
+        data: new Date().toLocaleString()
+    };
+
+    mensagensSalvas.push(novaMensagem);
+    localStorage.setItem('mensagens', JSON.stringify(mensagensSalvas));
+}

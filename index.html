@@ -6,8 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfólio | Leonardo</title>
-    <link rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="assets/bootstrap-icons/fonts/bootstrap-icons.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
         integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
@@ -143,79 +142,9 @@
 
     <script src="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.js"></script>
     <script src='https://npmcdn.com/@turf/turf/turf.min.js'></script>
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="typed.js@2.0.12.js"></script>
+    <script src="scrollreveal.js"></script>
     <script src="script.js"> </script>
-</body>
-  
-    <script>
-        document.getElementById('form-contato').addEventListener('submit', function (e) {
-            e.preventDefault();
-        
-            const form = e.target;
-            const nome = form.nome.value.trim();
-            const email = form.email.value.trim();
-            const telefone = form.telefone.value.trim();
-            const assunto = form.assunto.value.trim();
-            const mensagem = form.mensagem.value.trim();
-        
-            const status = document.getElementById('mensagem-status');
-            const loader = document.getElementById('loader');
-        
-            if (nome && email && assunto && mensagem) {
-                // Mostrar loader
-                loader.style.display = 'block';
-                status.style.opacity = 0;
-        
-                // Simulando envio (2 segundos)
-                setTimeout(() => {
-                    // Ocultar loader
-                    loader.style.display = 'none';
-        
-                    // Exibir mensagem de sucesso com fade-in
-                    status.innerText = 'Mensagem enviada com sucesso!';
-                    status.style.color = 'green';
-                    status.classList.add('fade');
-        
-                    // Salvar no localStorage
-                    salvarMensagemLocal(nome, email, telefone, assunto, mensagem);
-        
-                    // Limpar formulário
-                    form.reset();
-        
-                    // Ocultar mensagem após 3 segundos (fade-out)
-                    setTimeout(() => {
-                        status.classList.remove('fade');
-                    }, 3000);
-        
-                }, 2000);
-            } else {
-                status.innerText = 'Por favor, preencha todos os campos obrigatórios.';
-                status.style.color = 'red';
-                status.classList.add('fade');
-        
-                setTimeout(() => {
-                    status.classList.remove('fade');
-                }, 3000);
-            }
-        });
-        
-        // Função para salvar a mensagem no localStorage
-        function salvarMensagemLocal(nome, email, telefone, assunto, mensagem) {
-            const mensagensSalvas = JSON.parse(localStorage.getItem('mensagens')) || [];
-        
-            const novaMensagem = {
-                nome: nome,
-                email: email,
-                telefone: telefone,
-                assunto: assunto,
-                mensagem: mensagem,
-                data: new Date().toLocaleString()
-            };
-        
-            mensagensSalvas.push(novaMensagem);
-            localStorage.setItem('mensagens', JSON.stringify(mensagensSalvas));
-        }
-        </script>        
+</body>        
 </html>
 

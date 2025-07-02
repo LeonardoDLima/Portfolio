@@ -656,3 +656,7 @@ path.leaflet-interactive{
     margin: 3rem 0 3rem 0;
     font-size: 15px;
 }
+.txt-reptile{
+    color: var(--main-color);
+    opacity: 10%;
+}

@@ -658,9 +658,11 @@ path.leaflet-interactive{
 }
 .txt-reptile{
     color: var(--main-color);
-    opacity: 10%;
+    opacity: 5%;
 }
-img.reptile{
-    height: 50%;
-    height: 50%;
-}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+  }

@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <base href="https://leonardodlima.github.io/Portfolio/">
     <meta charset="UTF-8">
@@ -16,13 +15,10 @@
         integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
         crossorigin=""></script>
 </head>
-
 <body>
     <header class="header">
         <a href="#" class="logo">Portfólio</a>
-
         <i class="bi bi-list" id="menu-icones"></i>
-
         <nav class="navbar">
             <a href="#inicio" class="ativo">Inicio</a>
             <a href="#sobre">Sobre</a>
@@ -31,7 +27,6 @@
             <a href="#contato">Contato</a>
         </nav>
     </header>
-
     <section class="inicio" id="inicio">
         <div class="inicio-content">
             <h3>Olá, Eu sou</h3>
@@ -43,14 +38,13 @@
                 <a href="https://x.com/LeoDLima615" target="_blank"><i class="bi bi-twitter-x"></i></a>
                 <a href="https://www.instagram.com/leoduartel/" target="_blank"><i class="bi bi-instagram"></i></a>
             </div>
-            <a href="#" class="btn">Download CV</a>
+            <!-- ******** curriculo em criacao ******** -->
+            <!-- <a href="#" class="btn">Download CV</a> -->
         </div>
-
         <div class="inicio-img">
             <img src="imagens/foto perfil3.png" alt="">
         </div>
     </section>
-
     <section class="sobre" id="sobre">
         <div class="sobre-img">
             <img src="imagens/ponto interrogacao verde.png" alt="">
@@ -63,21 +57,17 @@
             <a href="#contato" class="btn">Consulte Mais informação</a>
         </div>
     </section>
-
     <section class="servicos" id="servicos">
         <h2 class="cabecario">Meus <span>serviços</span></h2>
-
         <div class="servicos-container">
             <div class="servicos-box">
                 <i class="bi bi-filetype-html"></i>
                 <h3>HTML</h3>
             </div>
-
             <div class="servicos-box">
                 <i class="bi bi-filetype-css"></i>
                 <h3>CSS</h3>
             </div>
-
             <div class="servicos-box">
                 <i class="bi bi-filetype-js"></i>
                 <h3>JAVASCRIPT</h3>
@@ -86,10 +76,8 @@
             <H1 class="txt-reptile">I am Reptile, find me!</H1>
         </div>
     </section>
-
     <section class="portfolio" id="portfolio">
         <h2 class="cabecario">Projetos <span>mais recente</span></h2>
-
         <div class="portfolio-banner">
             <div class="portfolio-slider" style="--quantity: 4">
                 <div class="item" style="--position: 1">
@@ -106,15 +94,17 @@
                 </div>
             </div>
         </div>
+        <br>
+        <h1 class="txt-navegacao">
+            Click nos botões para navegar ou utilize as teclas A e D.
+        </h1>
         <div class="bataoFoto">
             <button class="btnAnteFt" id="fotoAnterior"><i class="bi bi-arrow-left-circle-fill"></i> Anterior</button>
             <button class="btnProxFt" id="proximaFoto">Próximo <i class="bi bi-arrow-right-circle-fill"></i></button>
         </div>
     </section>
-
     <section class="contato" id="contato">
         <h2 class="cabecario">Meu <span>contato!</span></h2>
-    
         <form id="form-contato">
             <div class="input-box">
                 <input type="text" placeholder="Seu nome" name="nome" required>
@@ -129,11 +119,9 @@
         </form>
         <!-- Loader -->
         <div id="loader" style="display: none; margin-top: 15px;">Enviando...</div>
-
         <!-- Mensagem de status -->
         <div id="mensagem-status" style="margin-top: 20px; font-weight: bold; opacity: 0; transition: opacity 0.5s;"></div>
     </section>    
-
     <footer class="rodape">
         <div class="texto-rodape">
             <p>Copyright &copy; 2024 by Leonardo Duarte de Lima | All Rights Reserved.</p>
@@ -142,7 +130,6 @@
             <a href="#inicio"><i class="bi bi-caret-up-fill"></i></a>
         </div>
     </footer>
-
     <script src="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.js"></script>
     <script src='https://npmcdn.com/@turf/turf/turf.min.js'></script>
     <script src="typed.js@2.0.12.js"></script>
@@ -150,4 +137,3 @@
     <script src="script.js"> </script>
 </body>        
 </html>
-

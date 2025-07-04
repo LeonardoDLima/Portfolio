@@ -28,6 +28,15 @@ body {
 
 }
 
+body.futuro-projeto{
+    background-image: url('../imagens/manutencao.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    height: 100vh;
+    background-color: #15202b;
+}
+
 section {
     min-height: 100vh;
     padding: 10rem 9% 2rem;

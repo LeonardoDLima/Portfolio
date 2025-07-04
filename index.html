@@ -20,17 +20,13 @@
     <!-- Script da biblioteca Leaflet (mapas) -->
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" crossorigin=""></script>
 </head>
-
 <body>
-
     <!-- Cabeçalho da página -->
     <header class="header">
         <!-- Logotipo com link para o topo -->
         <a href="#" class="logo">Portfólio</a>
-
         <!-- Ícone de menu responsivo -->
         <i class="bi bi-list" id="menu-icones"></i>
-
         <!-- Menu de navegação -->
         <nav class="navbar">
             <a href="#inicio" class="ativo">Inicio</a>
@@ -40,7 +36,6 @@
             <a href="#contato">Contato</a>
         </nav>
     </header>
-
     <!-- Seção de apresentação -->
     <section class="inicio" id="inicio">
         <div class="inicio-content">
@@ -48,24 +43,20 @@
             <h1><span class="multiple-text"></span></h1> <!-- Área onde o texto dinâmico será exibido -->
             <h3>E eu sou estudante de Engenharia de Software!</h3>
             <p>Uma mente que se abre a uma nova ideia, jamais voltará ao seu tamanho original. "Albert Einstein"</p>
-
             <!-- Ícones de redes sociais -->
             <div class="midia-social">
                 <a href="https://www.facebook.com/leonardo.duartedelima.1" target="_blank"><i class="bi bi-facebook"></i></a>
                 <a href="https://x.com/LeoDLima615" target="_blank"><i class="bi bi-twitter-x"></i></a>
                 <a href="https://www.instagram.com/leoduartel/" target="_blank"><i class="bi bi-instagram"></i></a>
             </div>
-
             <!-- Link de download do currículo (em desenvolvimento) -->
             <!-- <a href="#" class="btn">Download CV</a> -->
         </div>
-
         <!-- Imagem de apresentação -->
         <div class="inicio-img">
             <img src="imagens/foto perfil3.png" alt="">
         </div>
     </section>
-
     <!-- Seção sobre mim -->
     <section class="sobre" id="sobre">
         <div class="sobre-img">
@@ -75,19 +66,15 @@
             <h2 class="cabecario">Sobre <span>Mim</span></h2>
             <h3>Grande sonhador!</h3>
             <p>Uma pessoa dedicada e batalhadora, sempre procurando melhorar minhas habilidades para ser um bom profissional, rápido para aprender novas habilidades e muito focado, sou bem sociável e não meço esforços para atingir meus objetivos.</p>
-
             <!-- Link para o perfil do GitHub -->
             <a href="https://github.com/LeonardoDLima" target="_blank" class="btn btn-github"><i class="bi bi-github"></i>My github profile</a><br>
-
             <!-- Link para rolar até a seção de contato -->
             <a href="#contato" class="btn">Consulte Mais informação</a>
         </div>
     </section>
-
     <!-- Seção de serviços -->
     <section class="servicos" id="servicos">
         <h2 class="cabecario">Meus <span>serviços</span></h2>
-
         <!-- Blocos de serviços -->
         <div class="servicos-container">
             <div class="servicos-box">
@@ -102,17 +89,14 @@
                 <i class="bi bi-filetype-js"></i> <!-- Ícone JavaScript -->
                 <h3>JAVASCRIPT</h3>
             </div>
-
             <!-- Texto de easter egg -->
             <br>
             <H1 class="txt-reptile">I am Reptile, find me!</H1>
         </div>
     </section>
-
     <!-- Seção de portfólio -->
     <section class="portfolio" id="portfolio">
         <h2 class="cabecario">Projetos <span>mais recente</span></h2>
-
         <!-- Carrossel 3D de projetos -->
         <div class="portfolio-banner">
             <div class="portfolio-slider" style="--quantity: 4">
@@ -146,24 +130,20 @@
                 </div>
             </div>
         </div>
-
         <!-- Instrução de navegação -->
         <br>
         <h1 class="txt-navegacao">
             Click nos botões para navegar ou utilize as teclas A e D.
         </h1>
-
         <!-- Botões de navegação do carrossel -->
         <div class="bataoFoto">
             <button class="btnAnteFt" id="fotoAnterior"><i class="bi bi-arrow-left-circle-fill"></i> Anterior</button>
             <button class="btnProxFt" id="proximaFoto">Próximo <i class="bi bi-arrow-right-circle-fill"></i></button>
         </div>
     </section>
-
     <!-- Seção de contato -->
     <section class="contato" id="contato">
         <h2 class="cabecario">Meu <span>contato!</span></h2>
-
         <!-- Formulário de contato -->
         <form id="form-contato">
             <div class="input-box">
@@ -175,36 +155,29 @@
                 <input type="text" placeholder="Assunto do Email" name="assunto" required>
             </div>
             <textarea name="mensagem" cols="30" rows="10" placeholder="Sua mensagem" required></textarea>
-
             <!-- Botão para enviar o formulário -->
             <input type="submit" value="Enviar mensagem" class="btn">
         </form>
-
         <!-- Loader animado para indicar envio -->
         <div id="loader" style="display: none; margin-top: 15px;">Enviando...</div>
-
         <!-- Área para exibir mensagens de status (sucesso ou erro) -->
         <div id="mensagem-status" style="margin-top: 20px; font-weight: bold; opacity: 0; transition: opacity 0.5s;"></div>
     </section>
-
     <!-- Rodapé -->
     <footer class="rodape">
         <div class="texto-rodape">
             <p>2025 by Leonardo Duarte de Lima.</p>
         </div>
-
         <!-- Botão para voltar ao topo -->
         <div class="rodape-iconTop">
             <a href="#inicio"><i class="bi bi-caret-up-fill"></i></a>
         </div>
     </footer>
-
     <!-- Scripts externos -->
     <script src="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.js"></script> <!-- Biblioteca de rotas -->
     <script src='https://npmcdn.com/@turf/turf/turf.min.js'></script> <!-- Biblioteca Turf.js para geoprocessamento -->
     <script src="js/typed.js@2.0.12.js"></script> <!-- Biblioteca para texto dinâmico -->
     <script src="js/scrollreveal.js"></script> <!-- Biblioteca de animação ao rolar -->
-    <script src="js/script.js"> </script> <!-- Script personalizado do projeto -->
-
+    <script src="js/script.js"> </script> <!-- Script personalizado do projeto --> 
 </body>
 </html>

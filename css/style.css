@@ -320,6 +320,8 @@ span {
     transform: rotateY(calc((var(--position) - 1) * (360 / var(--quantity)) * 1deg)) translateZ(480px); /* Distribui os itens circularmente no espaço 3D */
     transform-style: preserve-3d; /* Mantém a profundidade do item */
     border-radius: 1rem;
+}
+.portfolio-banner .portfolio-slider .item:hover{
     box-shadow: var(--main-color) 0px 0px 10px 0px;
 }
 

@@ -320,7 +320,7 @@ span {
     transform: rotateY(calc((var(--position) - 1) * (360 / var(--quantity)) * 1deg)) translateZ(480px); /* Distribui os itens circularmente no espaço 3D */
     transform-style: preserve-3d; /* Mantém a profundidade do item */
     border-radius: 1rem;
-    box-shadow: var(--main-color) 0px 7px 29px 0px;
+    box-shadow: var(--main-color) 0px 0px 10px 0px;
 }
 
 /* Faces do carrossel (frente e verso) */
@@ -332,6 +332,7 @@ span {
     backface-visibility: hidden; /* Esconde o verso ao olhar de frente */
     border-radius: 1rem;
     overflow: hidden;
+    box-shadow: none;
 }
 
 /* Imagens do carrossel */

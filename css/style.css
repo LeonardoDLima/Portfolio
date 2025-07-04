@@ -319,8 +319,8 @@ span {
     inset: 0 0 0 0; /* Ocupa 100% da área */
     transform: rotateY(calc((var(--position) - 1) * (360 / var(--quantity)) * 1deg)) translateZ(480px); /* Distribui os itens circularmente no espaço 3D */
     transform-style: preserve-3d; /* Mantém a profundidade do item */
-    box-shadow: 5px 5px 10px var(--main-color);
     border-radius: 1rem;
+    box-shadow: var(--main-color) 0px 7px 29px 0px;
 }
 
 /* Faces do carrossel (frente e verso) */

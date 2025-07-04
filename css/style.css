@@ -1,143 +1,160 @@
+/* Reseta estilos padrões e aplica comportamentos globais */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    border: none;
-    outline: none;
-    scroll-behavior: smooth;
-    font-family:sans-serif;
+    margin: 0; /* Remove margens padrão */
+    padding: 0; /* Remove espaçamentos padrão */
+    box-sizing: border-box; /* Inclui borda e padding no cálculo total */
+    text-decoration: none; /* Remove sublinhado de links */
+    border: none; /* Remove bordas padrão */
+    outline: none; /* Remove contorno ao focar */
+    scroll-behavior: smooth; /* Rolagem suave ao clicar em âncoras */
+    font-family: sans-serif; /* Define a fonte padrão */
 }
 
+/* Variáveis globais para cores reutilizáveis */
 :root {
-    --bg-color: #1f242d;
-    --second-bg-color: #323946;
-    --text-color: #fff;
-    --main-color: rgb(157, 255, 0);
+    --bg-color: #1f242d; /* Cor de fundo padrão */
+    --second-bg-color: #323946; /* Cor de fundo secundária */
+    --text-color: #fff; /* Cor padrão dos textos */
+    --main-color: rgb(157, 255, 0); /* Cor de destaque */
 }
 
+/* Define tamanho base de fonte e oculta rolagem horizontal */
 html {
-    font-size: 62.5%;
-    overflow-x: hidden;
-
+    font-size: 62.5%; /* 1rem = 10px */
+    overflow-x: hidden; /* Impede rolagem horizontal */
 }
 
+/* Aplica cor de fundo e texto padrão no body */
 body {
     background-color: var(--bg-color);
     color: var(--text-color);
-
 }
 
-body.futuro-projeto{
-    background-image: url('../imagens/manutencao.png');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-    height: 100vh;
-    background-color: #15202b;
+/* Estilo para página em manutenção */
+body.futuro-projeto {
+    background-image: url('../imagens/manutencao.png'); /* Caminho da imagem de fundo */
+    background-repeat: no-repeat; /* Não repete a imagem */
+    background-position: center; /* Centraliza a imagem */
+    background-size: contain; /* Imagem ajusta para caber */
+    height: 100vh; /* Altura da tela inteira */
+    background-color: #15202b; /* Cor de fundo caso a imagem não carregue */
 }
 
+/* Define altura mínima das seções */
 section {
-    min-height: 100vh;
-    padding: 10rem 9% 2rem;
-}
-section.inicio {
-    background-image: url('../imagens/plano-de-fundo.webp');
+    min-height: 100vh; /* Sempre ocupa a tela cheia */
+    padding: 10rem 9% 2rem; /* Espaçamento interno */
 }
 
+/* Plano de fundo da seção inicial */
+section.inicio {
+    background-image: url('../imagens/plano-de-fundo.webp'); /* Caminho do fundo */
+}
+
+/* Cabeçalho fixo no topo */
 .header {
-    position: fixed;
+    position: fixed; /* Fixa no topo */
     top: 0;
     left: 0;
-    width: 100%;
-    padding: 2rem 9%;
-    background-color: var(--bg-color);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 100;
+    width: 100%; /* Ocupa toda a largura */
+    padding: 2rem 9%; /* Espaçamento interno */
+    background-color: var(--bg-color); /* Cor de fundo */
+    display: flex; /* Layout flexível */
+    justify-content: space-between; /* Espaçamento entre itens */
+    align-items: center; /* Alinhamento vertical */
+    z-index: 100; /* Sobreposição alta */
 }
 
+/* Cabeçalho com borda inferior */
 .header.guardar {
-    border-bottom: .3rem solid var(--main-color);
+    border-bottom: .3rem solid var(--main-color); /* Borda verde quando scrollado */
 }
 
+/* Estilo da logo */
 .logo {
     position: relative;
     font-size: 2.5rem;
     color: var(--text-color);
     font-weight: 600;
-    cursor: default;
+    cursor: default; /* Cursor padrão (não clicável) */
 }
 
+/* Estilo dos links do menu */
 .navbar a {
     font-size: 1.7rem;
     color: var(--text-color);
-    margin-left: 4rem;
-    transition: .3s;
+    margin-left: 4rem; /* Espaço entre links */
+    transition: .3s; /* Transição suave */
 }
 
+/* Link ativo ou hover muda de cor */
 .navbar a:hover,
 .navbar a.ativo {
     color: var(--main-color);
 }
 
+/* Ícone do menu mobile */
 #menu-icones {
     font-size: 3.6rem;
     color: var(--text-color);
-    display: none;
+    display: none; /* Escondido por padrão */
 }
 
+/* Layout da seção inicial */
 .inicio {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+/* Imagem da seção inicial com animação */
 .inicio-img img {
-    width: 30vw;
-    animation: FloatImage 4s ease-in-out infinite;
+    width: 30vw; /* 30% da largura da viewport */
+    animation: FloatImage 4s ease-in-out infinite; /* Animação contínua */
 }
 
+/* Animação de flutuação */
 @keyframes FloatImage {
-    0% {
-        transform: translateY(0);
-    }
-    50% {
-        transform: translateY(-2.4rem);
-    }
-    100% {
-        transform: translateY(0);
-    }
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-2.4rem); }
+    100% { transform: translateY(0); }
 }
-.inicio-img img:hover{
+
+/* Zoom leve na imagem ao passar o mouse */
+.inicio-img img:hover {
     width: 31vw;
     transition: .3s;
 }
 
+/* Estilo dos textos da seção inicial */
 .inicio-content h3 {
     font-size: 3.2rem;
     font-weight: 700;
 }
 
+/* Espaçamento extra no segundo h3 */
 .inicio-content h3:nth-of-type(2) {
     margin-bottom: 2rem;
 }
 
+/* Estilo global para elementos span */
 span {
     color: var(--main-color);
 }
 
+/* Título principal da página */
 .inicio-content h1 {
     font-size: 5.6rem;
     font-weight: 700;
     line-height: 1.3;
 }
 
+/* Texto descritivo da página inicial */
 .inicio-content p {
     font-size: 1.6rem;
 }
 
+/* Ícones das redes sociais */
 .midia-social a {
     display: inline-flex;
     justify-content: center;
@@ -153,12 +170,14 @@ span {
     transition: .5s ease;
 }
 
+/* Efeito hover nos ícones sociais */
 .midia-social a:hover {
     background-color: var(--main-color);
     color: var(--second-bg-color);
     box-shadow: 0 0 1rem var(--main-color);
 }
 
+/* Botões padrão */
 .btn {
     display: inline-block;
     padding: 1rem 2.8rem;
@@ -172,10 +191,12 @@ span {
     transition: .5s ease;
 }
 
+/* Efeito hover dos botões */
 .btn:hover {
     box-shadow: none;
 }
 
+/* Seção sobre - layout flexível */
 .sobre {
     display: flex;
     justify-content: center;
@@ -184,44 +205,52 @@ span {
     background-color: var(--second-bg-color);
 }
 
-.sobre-img img{
+/* Imagem da seção sobre */
+.sobre-img img {
     width: 30vw;
 }
 
+/* Título padrão das seções */
 .cabecario {
     text-align: center;
     font-size: 4.5rem;
 }
 
-.sobre-content h2{
+/* Título da seção sobre */
+.sobre-content h2 {
     text-align: left;
     line-height: 1.2;
 }
 
-.sobre-content h3{
+/* Subtítulo da seção sobre */
+.sobre-content h3 {
     font-size: 2.6rem;
 }
 
+/* Parágrafo da seção sobre */
 .sobre-content p {
     font-size: 1.6rem;
     margin: 2rem 0 3rem;
 }
 
-.servicos h2{
+/* Título da seção serviços */
+.servicos h2 {
     margin-bottom: 5rem;
 }
 
+/* Container dos cards de serviços */
 .servicos-container {
-    display:flex;
+    display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
+    flex-wrap: wrap; /* Quebra de linha automática */
     gap: 2rem;
 }
 
+/* Estilo dos cards de serviços */
 .servicos-container .servicos-box {
-    display:grid;
-    flex: 1 1 30rem;
+    display: grid;
+    flex: 1 1 30rem; /* Tamanho mínimo flexível */
     background-color: var(--second-bg-color);
     padding: 3rem 2rem 4rem;
     border-radius: 2rem;
@@ -230,35 +259,41 @@ span {
     transition: .5s ease;
 }
 
+/* Efeito hover dos cards */
 .servicos-container .servicos-box:hover {
     border-color: var(--main-color);
     transform: scale(1.02);
 }
 
+/* Ícone do serviço */
 .servicos-box i {
     font-size: 7rem;
     color: var(--main-color);
 }
 
+/* Título do serviço */
 .servicos-box h3 {
     font-size: 2.6rem;
 }
 
+/* Descrição do serviço */
 .servicos-box p {
     font-size: 1.6rem;
     margin: 1rem 0 3rem;
 }
 
+/* Seção do portfólio */
 .portfolio {
     background: var(--second-bg-color);
 }
 
+/* Título do portfólio */
 .portfolio h2 {
     margin-bottom: 4rem;
 }
 
+/* Área de visualização do carrossel */
 .portfolio-banner {
-  
     width: 100%;
     height: 55vh;
     text-align: center;
@@ -266,57 +301,63 @@ span {
     position: relative;
 }
 
+/* Configurações do carrossel 3D */
 .portfolio-banner .portfolio-slider {
     position: absolute;
     top: 10%;
     width: 200px;
     height: 125px;
     left: calc(50% - 100px);
-    transform-style: preserve-3d;
-    transform: perspective(1000px) rotateX(-9deg);
-    transition: 1s;
+    transform-style: preserve-3d; /* Ativa o efeito 3D */
+    transform: perspective(1000px) rotateX(-9deg); /* Perspectiva e inclinação 3D */
+    transition: 1s; /* Animação suave ao girar */
 }
 
+/* Cada item (imagem) do carrossel */
 .portfolio-banner .portfolio-slider .item {
     position: absolute;
-    inset: 0 0 0 0;
-    transform:
-        rotateY(calc((var(--position) - 1 ) * (360 / var(--quantity)) * 1deg))
-        translateZ(480px);
-    transform-style: preserve-3d; /* Necessário para o 3D funcionar corretamente */
+    inset: 0 0 0 0; /* Ocupa 100% da área */
+    transform: rotateY(calc((var(--position) - 1) * (360 / var(--quantity)) * 1deg)) translateZ(480px); /* Distribui os itens circularmente no espaço 3D */
+    transform-style: preserve-3d; /* Mantém a profundidade do item */
 }
 
+/* Faces do carrossel (frente e verso) */
 .portfolio-banner .portfolio-slider .front,
 .portfolio-banner .portfolio-slider .back {
     position: absolute;
     width: 100%;
     height: 100%;
-    backface-visibility: hidden; /* Esconde a parte de trás quando de frente */
-    border-radius: 1rem; /* Opcional: bordas arredondadas */
-    overflow: hidden; /* Evita que a imagem vaze para fora */
+    backface-visibility: hidden; /* Esconde o verso ao olhar de frente */
+    border-radius: 1rem;
+    overflow: hidden;
 }
 
+/* Imagens do carrossel */
 .portfolio-banner .portfolio-slider .front img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: cover; /* Imagem cobre toda a área */
     transition: transform 0.5s ease;
     cursor: pointer;
 }
 
+/* Zoom na imagem ao passar o mouse */
 .portfolio-banner .portfolio-slider .front:hover img {
     transform: scale(1.1);
 }
 
+/* Verso da imagem rotacionado */
 .portfolio-banner .portfolio-slider .back {
-    transform: rotateY(180deg); /* Faz o verso aparecer quando o item gira */
-    background-color: var(--bg-color); /* Cor preta para o verso */
+    transform: rotateY(180deg);
+    background-color: var(--bg-color);
 }
 
+/* Centraliza botões de navegação do carrossel */
 .bataoFoto {
     text-align: center;
 }
 
+/* Estilo dos botões de navegação e voltar */
 .btnAnteFt, .btnProxFt, .btnVolt {
     display: inline-block;
     padding: 1rem 2.8rem;
@@ -330,12 +371,14 @@ span {
     transition: .5s ease;
 }
 
+/* Hover dos botões de navegação */
 .btnProxFt:hover,
 .btnAnteFt:hover,
 .btnVolt:hover {
     box-shadow:  0 0 1rem var(--main-color);
 }
 
+/* Estilo das imagens dentro do carrossel */
 .portfolio-slider img {
     box-shadow:  0 0 1rem var(--main-color);
     width: 100%;
@@ -343,45 +386,51 @@ span {
     object-fit: cover;
 }
 
+/* Efeito hover nas imagens do carrossel */
 .portfolio-slider:hover img {
     transform: scale(1.1);
     cursor: pointer;
 }
-
-
+/* Animação personalizada: altera a cor do botão */
 .btnAnteFt.animacao {
-    color: green;
+    color: green; /* Cor verde quando a classe "animacao" é aplicada */
 }
+
+/* Camada sobreposta nas imagens do carrossel */
 .portfolio-slider .portfolio-layer {
-    position: absolute;
+    position: absolute; /* Sobrepõe a imagem */
     bottom: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(rgba(0, 0, 0, .1), var(--main-color));
+    background: linear-gradient(rgba(0, 0, 0, .1), var(--main-color)); /* Degradê transparente para verde */
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+    flex-direction: column; /* Alinha os elementos verticalmente */
     text-align: center;
     padding: 0 4rem;
-    transform: translateY(100%);
+    transform: translateY(100%); /* Começa escondida */
     transition: .5s ease;
 }
 
+/* Mostra a camada sobreposta ao passar o mouse */
 .portfolio-slider:hover .portfolio-layer {
-    transform: translateY(0);
+    transform: translateY(0); /* Move para cima e aparece */
 }
 
+/* Título dentro da camada */
 .portfolio-layer h4 {
     font-size: 3rem;
 }
 
+/* Texto dentro da camada */
 .portfolio-layer p {
     font-size: 1.6rem;
     margin: .3rem 0 1rem;
 }
 
+/* Botão (ícone) dentro da camada */
 .portfolio-layer a {
     display: inline-flex;
     justify-content: center;
@@ -392,15 +441,18 @@ span {
     border-radius: 50%;
 }
 
+/* Ícone dentro do botão da camada */
 .portfolio-layer a i {
     font-size: 2rem;
     color: var(--second-bg-color);
 }
 
+/* Título da seção de contato */
 .contato h2 {
     margin-bottom: 3rem;
 }
 
+/* Formulário de contato centralizado */
 .contato form {
     max-width: 70rem;
     margin: 1rem auto;
@@ -408,12 +460,14 @@ span {
     margin-bottom: 3rem;
 }
 
+/* Caixa de inputs lado a lado */
 .contato form .input-box {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
 
+/* Estilo dos inputs e textarea */
 .contato form .input-box input,
 .contato form textarea {
     width: 100%;
@@ -425,19 +479,23 @@ span {
     margin: .7rem 0;
 }
 
+/* Inputs lado a lado ocupando metade */
 .contato form .input-box input {
     width: 49%;
 }
 
+/* Desativa redimensionamento manual */
 .contato form textarea {
     resize: none;
 }
 
+/* Botão de enviar com cursor pointer */
 .contato form .btn {
     margin-top: 2rem;
     cursor: pointer;
 }
 
+/* Rodapé com layout flexível */
 .rodape {
     display: flex;
     justify-content: space-between;
@@ -447,10 +505,12 @@ span {
     background: var(--second-bg-color);
 }
 
+/* Texto do rodapé */
 .texto-rodape p {
     font-size: 1.6rem;
 }
 
+/* Botão para voltar ao topo */
 .rodape-iconTop a {
     display: inline-flex;
     justify-content: center;
@@ -461,20 +521,21 @@ span {
     transition: .5s ease;
 }
 
+/* Efeito hover no botão voltar ao topo */
 .rodape-iconTop a:hover {
     box-shadow: 0 0 1rem var(--main-color);
 }
 
+/* Ícone do botão voltar ao topo */
 .rodape-iconTop a i {
     font-size: 2.4rem;
     color: var(--second-bg-color);
 }
 
-/* PONTOS DE INTERRUPÇÃO */
-
+/* PONTOS DE INTERRUPÇÃO (Responsividade) */
 @media (max-width: 1200px) {
     html {
-        font-size: 55%;
+        font-size: 55%; /* Reduz escala geral */
     }
 }
 
@@ -487,16 +548,13 @@ span {
         padding: 10rem 3% 2rem;
     }
 
-    .servicos {
-        padding-bottom: 7rem;
+    .servicos, .portfolio {
+        padding-bottom: 7rem; /* Mais espaço inferior */
     }
 
-    .portfolio {
-        padding-bottom: 7rem;
-    }
-     .contato {
+    .contato {
         min-height: auto;
-     }
+    }
 
     .rodape {
         padding: 2rem 3%;
@@ -505,7 +563,7 @@ span {
 
 @media (max-width: 768px) {
     #menu-icones {
-        display: block;
+        display: block; /* Mostra o menu mobile */
     }
 
     .navbar {
@@ -517,24 +575,23 @@ span {
         background: var(--bg-color);
         border-top: .1rem solid rgba(0, 0, 0, .2);
         box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
-        display: none;
+        display: none; /* Menu escondido inicialmente */
     }
 
     .navbar.ativo {
-        display: block;
+        display: block; /* Mostra o menu quando ativo */
     }
 
-
     .navbar a {
-        display: block;
+        display: block; /* Links um embaixo do outro */
         font-size: 2rem;
         margin: 3rem 0;
     }
 
     .inicio {
-        flex-direction: column;
+        flex-direction: column; /* Coloca os elementos em coluna */
     }
-    
+
     .inicio h3 {
         font-size: 2.6rem;
     }
@@ -543,16 +600,13 @@ span {
         font-size: 5rem;
     }
 
-    .inicio-img img{
+    .inicio-img img {
         width: 70vw;
         margin-top: 4rem;
     }
 
     .sobre {
         flex-direction: column-reverse;
-    }
-
-    .sobre {
         width: 100vw;
         margin-top: 4rem;
     }
@@ -566,41 +620,38 @@ span {
     }
 
     .portfolio-banner {
-        grid-template-columns: repeat(2 ,1fr);
+        grid-template-columns: repeat(2, 1fr); /* Duas colunas */
     }
 }
 
 @media (max-width: 617px) {
     .portfolio-banner {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr; /* Apenas uma coluna */
     }
 
-    h1.txt-navegacao{
-        display: none;
+    h1.txt-navegacao {
+        display: none; /* Esconde o título de navegação */
     }
 }
 
 @media (max-width: 450px) {
     html {
-        font-size: 50%;
+        font-size: 50%; /* Fonte ainda menor */
     }
 
     .contato form .input-box input {
-        width: 100%;
+        width: 100%; /* Inputs ocupam 100% da largura */
     }
 }
 
 @media (max-width: 365px) {
-    .inicio-img img {
-        width: 90vw;
-    }
-
+    .inicio-img img,
     .sobre-img img {
-        width: 90vw;
+        width: 90vw; /* Imagens quase ocupam a largura toda */
     }
 
     .rodape {
-        flex-direction:column-reverse;
+        flex-direction: column-reverse;
     }
 
     .rodape p {
@@ -609,104 +660,100 @@ span {
     }
 
     .portfolio-slider .item {
-        transform: translateZ(50px);
+        transform: translateZ(50px); /* Ajuste para o efeito 3D */
     }
 }
 
-/*=============mapa===============*/
+/* Estilo do Mapa (Leaflet) */
+
 #mapid { 
     height: 350px;
     width: 60%;
-    border-left-style: solid;
-    border-left-width: 2px;
-    border-top-width: 2px;
-    border-top-style: solid;
-    border-bottom-width: 2px;
-    border-bottom-style: solid;
-    border-right-width: 2px;
-    border-right-style: solid;
-    border-color: var(--main-color);
+    border: 2px solid var(--main-color); /* Borda verde */
     margin: auto;
     display: block;    
- }
-.leaflet-top{
-  display: none;
+}
+
+.leaflet-top {
+    display: none; /* Esconde controles superiores */
 }
 
 .leaflet-routing-alt h3 {
-    color: red;
-}
-.leaflet-bottom.leaflet-right{
-  display: none;
+    color: red; /* Cor vermelha nos títulos da rota */
 }
 
-/*linha do mapa*/
-path.leaflet-interactive{
-  stroke: blue;
-  stroke-width: 3;
+.leaflet-bottom.leaflet-right {
+    display: none; /* Esconde controles inferiores */
 }
 
-#distancia {
+/* Linha da rota no mapa */
+path.leaflet-interactive {
+    stroke: blue; /* Cor azul da linha */
+    stroke-width: 3; /* Espessura da linha */
+}
+
+/* Estilo da distância */
+#distancia, #txtDistancia, #km {
     padding-top: 10px;
     text-align: center;
     font-size: 20px;
     color: var(--main-color);
 }
 
-#txtDistancia{
-    text-align: center;
-    font-size: 20px;
-    color: var(--main-color);
-}
-#km{
-    text-align: center;
-    font-size: 20px;
-    color: var(--main-color);
-}
-
-.leaflet-marker-icon.leaflet-zoom-animated.leaflet-interactive.leaflet-marker-draggable{
+/* Remove o marcador padrão */
+.leaflet-marker-icon.leaflet-zoom-animated.leaflet-interactive.leaflet-marker-draggable {
     display: none;
 }
+
+/* Mensagem de status visível */
 #mensagem-status.fade {
     opacity: 1;
 }
 
+/* Loader azul com itálico */
 #loader {
     font-style: italic;
     color: blue;
 }
+
+/* Classe fade com transição de opacidade */
 .fade {
     opacity: 1 !important;
     transition: opacity 0.5s ease-in-out;
 }
-.btn-github{
+
+/* Botão de link para o GitHub */
+.btn-github {
     color: white;
     background-color: black;
     border-radius: 5px;
     box-shadow: none;
-    margin: 3rem 0 3rem 0;
+    margin: 3rem 0;
     transition: .5s ease;
 }
-.btn-github:hover{
-    color: white;
-    background-color: black;
-    border-radius: 5px;
-    box-shadow: none;
-    margin: 3rem 0 3rem 0;
+
+/* Efeito hover no botão GitHub */
+.btn-github:hover {
     font-size: 15px;
 }
-.txt-reptile{
+
+/* Texto do reptile com baixa opacidade (quase invisível) */
+.txt-reptile {
     color: var(--main-color);
     opacity: 5%;
 }
-h1.txt-navegacao{
+
+/* Título da navegação */
+h1.txt-navegacao {
     font-size: 2rem !important;
     color: var(--main-color);
     text-align: center;
 }
+
+/* Container centralizador */
 .container {
     display: flex;
     justify-content: center;
     align-items: center;
     height: auto;
-  }
+}

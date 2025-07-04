@@ -447,9 +447,10 @@ span {
 @media (max-width: 1200px) {
     html {
         font-size: 55%;
-
     }
-    
+    h1.txt-navegacao{
+        display: none;
+    }
 }
 
 @media (max-width: 991px) {
@@ -547,10 +548,6 @@ span {
 @media (max-width: 617px) {
     .portfolio-banner {
         grid-template-columns: 1fr;
-    }
-
-    h1.txt-navegacao{
-        display: none;
     }
 }
 

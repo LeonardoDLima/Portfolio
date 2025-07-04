@@ -542,6 +542,9 @@ span {
     .portfolio-banner {
         grid-template-columns: repeat(2 ,1fr);
     }
+    h1.txt-reptile{
+        display: none;
+    }
 }
 
 @media (max-width: 617px) {

@@ -542,14 +542,15 @@ span {
     .portfolio-banner {
         grid-template-columns: repeat(2 ,1fr);
     }
-    h1.txt-navegacao{
-        display: none;
-    }
 }
 
 @media (max-width: 617px) {
     .portfolio-banner {
         grid-template-columns: 1fr;
+    }
+
+    h1.txt-navegacao{
+        display: none;
     }
 }
 

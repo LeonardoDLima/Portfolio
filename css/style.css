@@ -310,7 +310,7 @@ span {
 
 .portfolio-banner .portfolio-slider .back {
     transform: rotateY(180deg); /* Faz o verso aparecer quando o item gira */
-    background-color: #000; /* Cor preta para o verso */
+    background-color: var(--bg-color); /* Cor preta para o verso */
 }
 
 .bataoFoto {

@@ -448,9 +448,6 @@ span {
     html {
         font-size: 55%;
     }
-    h1.txt-navegacao{
-        display: none;
-    }
 }
 
 @media (max-width: 991px) {
@@ -481,6 +478,10 @@ span {
 @media (max-width: 768px) {
     #menu-icones {
         display: block;
+    }
+    
+    h1.txt-navegacao{
+        display: none;
     }
 
     .navbar {

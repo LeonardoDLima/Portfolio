@@ -479,10 +479,6 @@ span {
     #menu-icones {
         display: block;
     }
-    
-    h1.txt-navegacao{
-        display: none;
-    }
 
     .navbar {
         position: absolute;
@@ -549,6 +545,10 @@ span {
 @media (max-width: 617px) {
     .portfolio-banner {
         grid-template-columns: 1fr;
+    }
+
+    h1.txt-navegacao{
+        display: none;
     }
 }
 

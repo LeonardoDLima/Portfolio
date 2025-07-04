@@ -281,9 +281,36 @@ span {
     position: absolute;
     inset: 0 0 0 0;
     transform:
-            rotateY(calc((var(--position) - 1 ) * (360 / var(--quantity)) * 1deg))
-            translateZ(480px);
-    background-color: #15202b;
+        rotateY(calc((var(--position) - 1 ) * (360 / var(--quantity)) * 1deg))
+        translateZ(480px);
+    transform-style: preserve-3d; /* Necessário para o 3D funcionar corretamente */
+}
+
+.portfolio-banner .portfolio-slider .front,
+.portfolio-banner .portfolio-slider .back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden; /* Esconde a parte de trás quando de frente */
+    border-radius: 1rem; /* Opcional: bordas arredondadas */
+    overflow: hidden; /* Evita que a imagem vaze para fora */
+}
+
+.portfolio-banner .portfolio-slider .front img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+    cursor: pointer;
+}
+
+.portfolio-banner .portfolio-slider .front:hover img {
+    transform: scale(1.1);
+}
+
+.portfolio-banner .portfolio-slider .back {
+    transform: rotateY(180deg); /* Faz o verso aparecer quando o item gira */
+    background-color: #000; /* Cor preta para o verso */
 }
 
 .bataoFoto {
@@ -314,7 +341,6 @@ span {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    background-color: #15202b;
 }
 
 .portfolio-slider:hover img {

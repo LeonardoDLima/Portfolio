@@ -120,12 +120,6 @@ section.inicio {
     100% { transform: translateY(0); }
 }
 
-/* Zoom leve na imagem ao passar o mouse */
-.inicio-img img:hover {
-    width: 31vw;
-    transition: .3s;
-}
-
 /* Estilo dos textos da seção inicial */
 .inicio-content h3 {
     font-size: 3.2rem;
@@ -159,17 +153,18 @@ span {
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    width: 4rem;
+    width: 10rem;
     height: 4rem;
     background-color: transparent;
-    border: .2rem solid var(--main-color);
-    border-radius: 50%;
+    border-radius: 1rem;
     font-size: 2rem;
-    color: var(--main-color);
     margin: 3rem 1.5rem 3rem 0;
     transition: .5s ease;
 }
-
+.midia-social a.midia-facebook{
+    color: #4268b3;
+    border: solid 2rem #37599b;
+}
 /* Efeito hover nos ícones sociais */
 .midia-social a:hover {
     background-color: var(--main-color);

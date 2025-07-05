@@ -174,13 +174,11 @@ span {
 .midia-social a.midia-instagram{
     color: white !important;
     border: solid 1px #37599b;
-    background-color: linear-gradient(left, #f32e32, #3740de) ;
+    background-color: linear-gradient(left, #fdc208,#f32e32, #5662d1) ;
 }
 /* Efeito hover nos ícones sociais */
 .midia-social a:hover {
-    background-color: var(--main-color);
-    color: var(--second-bg-color);
-    box-shadow: 0 0 1rem var(--main-color);
+    box-shadow: 0 0 0.5rem black;
 }
 
 /* Botões padrão */

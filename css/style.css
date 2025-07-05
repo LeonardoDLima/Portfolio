@@ -749,7 +749,7 @@ path.leaflet-interactive {
 }
 
 /* Título da navegação */
-h1.txt-navegacao {
+h2.txt-navegacao {
     font-size: 2rem !important;
     color: var(--main-color);
     text-align: center;

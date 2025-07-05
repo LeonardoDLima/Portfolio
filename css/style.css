@@ -162,8 +162,19 @@ span {
     transition: .5s ease;
 }
 .midia-social a.midia-facebook{
-    color: #4268b3;
-    border: solid 2rem #37599b;
+    color: white !important;
+    border: solid 1px #37599b;
+    background-color: #4268b3;
+}
+.midia-social a.midia-x{
+    color: white !important;
+    border: solid 1px #000000;
+    background-color: #000000;
+}
+.midia-social a.midia-instagram{
+    color: white !important;
+    border: solid 1px #37599b;
+    background-color: linear-gradient(left, #f32e32, #3740de) ;
 }
 /* Efeito hover nos ícones sociais */
 .midia-social a:hover {

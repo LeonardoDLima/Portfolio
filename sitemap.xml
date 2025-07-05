@@ -1,16 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
+  <!-- Página inicial -->
   <url>
     <loc>https://leonardodlima.github.io/Portfolio/</loc>
-    <lastmod>2025-07-05</lastmod>
+    <lastmod>2025-07-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
 
+  <!-- Página do mapa -->
   <url>
     <loc>https://leonardodlima.github.io/Portfolio/portfolio02.html</loc>
-    <lastmod>2025-07-05</lastmod>
+    <lastmod>2025-07-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+      <!-- Página do projeto2 -->
+  <url>
+    <loc>https://leonardodlima.github.io/Portfolio/projeto2.html</loc>
+    <lastmod>2025-07-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+      <!-- Página do projeto3 -->
+  <url>
+    <loc>https://leonardodlima.github.io/Portfolio/projeto3.html</loc>
+    <lastmod>2025-07-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+        <!-- Página do projeto4 -->
+  <url>
+    <loc>https://leonardodlima.github.io/Portfolio/projeto4.html</loc>
+    <lastmod>2025-07-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>

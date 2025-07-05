@@ -634,7 +634,7 @@ span {
         grid-template-columns: 1fr; /* Apenas uma coluna */
     }
 
-    h1.txt-navegacao {
+    h2.txt-navegacao {
         display: none; /* Esconde o título de navegação */
     }
 }

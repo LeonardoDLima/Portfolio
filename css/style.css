@@ -749,9 +749,8 @@ path.leaflet-interactive {
 /* Texto do reptile com baixa opacidade (quase invisível) */
 .txt-reptile {
     text-align: center;
-    size: 2rem;
     color: var(--main-color);
-    opacity: 5%;
+    opacity: 20%;
 }
 
 /* Título da navegação */

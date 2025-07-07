@@ -53,9 +53,6 @@ function success(pos){
         // Exibe a distância calculada
         h3.textContent = `${distanciaKm} km`;
     })
-    .on('routesfound', function (e) { // Segunda escuta (não necessária, está repetida)
-        console.log(e);
-    })
     .addTo(map);
 }
 

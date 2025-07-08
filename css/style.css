@@ -64,6 +64,9 @@ section.inicio {
     align-items: center; /* Alinhamento vertical */
     z-index: 100; /* Sobreposição alta */
 }
+.header-project{
+    border-bottom: .3rem solid rgb(157, 255, 0);
+}
 
 /* Cabeçalho com borda inferior */
 .header.guardar {
@@ -142,7 +145,12 @@ span {
     font-weight: 700;
     line-height: 1.3;
 }
-
+h1{
+    font-size: 3rem;
+}
+h2{
+    font-size: 3rem;
+}
 /* Texto descritivo da página inicial */
 .inicio-content p {
     font-size: 1.6rem;
@@ -718,11 +726,18 @@ path.leaflet-interactive {
 #mensagem-status.fade {
     opacity: 1;
 }
-
+#mensagem-status{
+    margin-top: 20px;
+    font-weight: bold;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
 /* Loader azul com itálico */
 #loader {
     font-style: italic;
     color: blue;
+    display: none;
+    margin-top: 15px;
 }
 
 /* Classe fade com transição de opacidade */

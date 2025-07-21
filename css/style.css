@@ -508,6 +508,7 @@ h2{
 
 /* Botão de enviar com cursor pointer */
 .contato form .btn {
+    margin-bottom: 2rem;
     margin-top: 2rem;
     cursor: pointer;
 }

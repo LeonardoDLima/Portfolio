@@ -1,39 +1,26 @@
 <!DOCTYPE html>
-<html lang="pt-br"> <!-- Define o idioma da página como português do Brasil -->
+<html lang="pt-br">
 <head>
-    <!-- Define o diretório base para os links relativos -->
     <base href="https://leonardodlima.github.io/Portfolio/">
-    <!-- Configura o charset para suportar acentuação -->
     <meta charset="UTF-8">
-    <!-- Configura o layout para dispositivos móveis -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio | Leonardo</title> <!-- Título da aba do navegador -->
-    <link rel="icon" href="favicon.ico" type="ico"><!-- icone da barra de navegação -->
-    <!-- descrição do conteúdo específico da página. -->
+    <title>Portfólio | Leonardo</title>
+    <link rel="icon" href="favicon.ico" type="ico">
     <meta name="description" content="Portfólio de Leonardo Duarte de Lima, desenvolvedor web e criador de projetos interativos.">
     <meta name="keywords" content="Portfólio, Web Design, Desenvolvimento Web, Projetos, Leonardo Duarte de Lima">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://leonardodlima.github.io/Portfolio/">
-    <!-- Ícones do Bootstrap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
-    <!-- CSS principal da página -->
     <link rel="stylesheet" href="css/style.css">
-    <!-- Estilos do Leaflet (mapas) -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" crossorigin=""/>
-    <!-- Estilos da biblioteca de rotas do Leaflet -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.css">
-    <!-- Script da biblioteca Leaflet (mapas) -->
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" crossorigin=""></script>
     <meta name="google-site-verification" content="QhDOI4leUh6Fohti7Wyrk1292Qjbz-tMqkGj60GbzGs" />
 </head>
 <body>
-    <!-- Cabeçalho da página -->
     <header class="header">
-        <!-- Logotipo com link para o topo -->
         <a href="#" class="logo">Portfólio</a>
-        <!-- Ícone de menu responsivo -->
         <i class="bi bi-list" id="menu-icones"></i>
-        <!-- Menu de navegação -->
         <nav class="navbar">
             <a href="#inicio" class="ativo">Inicio</a>
             <a href="#sobre">Sobre</a>
@@ -42,28 +29,22 @@
             <a href="#contato">Contato</a>
         </nav>
     </header>
-    <!-- Seção de apresentação -->
     <section class="inicio" id="inicio">
         <div class="inicio-content">
             <h1>Olá, Eu sou</h1>
-            <h1><span class="multiple-text"></span></h1> <!-- Área onde o texto dinâmico será exibido -->
+            <h1><span class="multiple-text"></span></h1>
             <h2>E eu sou estudante de Engenharia de Software!</h2>
             <p>Uma mente que se abre a uma nova ideia, jamais voltará ao seu tamanho original. "Albert Einstein"</p>
-            <!-- Ícones de redes sociais -->
             <div class="midia-social">
                 <a class="midia-facebook" href="https://www.facebook.com/leonardo.duartedelima.1" target="_blank"><i class="bi bi-facebook"></i></a>
                 <a class="midia-x"href="https://x.com/LeoDLima615" target="_blank"><i class="bi bi-twitter-x"></i></a>
                 <a class="midia-instagram"href="https://www.instagram.com/leoduartel/" target="_blank"><i class="bi bi-instagram"></i></a>
             </div>
-            <!-- Link de download do currículo (em desenvolvimento) -->
-            <!-- <a href="#" class="btn">Download CV</a> -->
         </div>
-        <!-- Imagem de apresentação -->
         <div class="inicio-img">
             <img src="imagens/foto perfil3.png" alt="Foto do perfil" loading="lazy">
         </div>
     </section>
-    <!-- Seção sobre mim -->
     <section class="sobre" id="sobre">
         <div class="sobre-img">
             <img src="imagens/ponto interrogacao verde.png" alt="imagem de ponto de interrogação" loading="lazy">
@@ -72,61 +53,50 @@
             <h2 class="cabecario">Sobre <span>Mim</span></h2>
             <h3>Grande sonhador!</h3>
             <p>Uma pessoa dedicada e batalhadora, sempre procurando melhorar minhas habilidades para ser um bom profissional, rápido para aprender novas habilidades e muito focado, sou bem sociável e não meço esforços para atingir meus objetivos.</p>
-            <!-- Link para o perfil do GitHub -->
             <a href="https://github.com/LeonardoDLima" target="_blank" class="btn btn-github"><i class="bi bi-github"></i>My github profile</a><br>
-            <!-- Link para rolar até a seção de contato -->
             <a href="#contato" class="btn">Consulte Mais informação</a>
         </div>
     </section>
-    <!-- Seção de serviços -->
     <section class="servicos" id="servicos">
         <h2 class="cabecario">Meus <span>serviços</span></h2>
-        <!-- Blocos de serviços -->
         <div class="servicos-container">
             <div class="servicos-box">
-                <i class="bi bi-filetype-html"></i> <!-- Ícone HTML -->
+                <i class="bi bi-filetype-html"></i>
                 <h3>HTML</h3>
             </div>
             <div class="servicos-box">
-                <i class="bi bi-filetype-css"></i> <!-- Ícone CSS -->
+                <i class="bi bi-filetype-css"></i>
                 <h3>CSS</h3>
             </div>
             <div class="servicos-box">
-                <i class="bi bi-filetype-js"></i> <!-- Ícone JavaScript -->
+                <i class="bi bi-filetype-js"></i>
                 <h3>JAVASCRIPT</h3>
             </div>
         </div>
-        <!-- Texto de easter egg -->
         <h2 class="txt-reptile">I am Reptile, find me!</h2>
     </section>
-    <!-- Seção de portfólio -->
     <section class="portfolio" id="portfolio">
         <h2 class="cabecario">Projetos <span>mais recente</span></h2>
-        <!-- Carrossel 3D de projetos -->
         <div class="portfolio-banner">
             <div class="portfolio-slider" style="--quantity: 4">
-                <!-- Item 1 -->
                 <div class="item" style="--position: 1">
                     <div class="front">
                         <a href="portfolio02.html"><img src="imagens/portfolio1.png" alt="imagem mini mapa" loading="lazy"></a>
                     </div>
-                    <div class="back"></div> <!-- Verso preto -->
+                    <div class="back"></div>
                 </div>
-                <!-- Item 2 -->
                 <div class="item" style="--position: 2">
                     <div class="front">
                         <a href="projeto2.html"><img src="imagens/projetos.png" alt="imagem de futuro projetos" loading="lazy"></a>
                     </div>
                     <div class="back"></div>
                 </div>
-                <!-- Item 3 -->
                 <div class="item" style="--position: 3">
                     <div class="front">
                         <a href="projeto3.html"><img src="imagens/projetos.png" alt="imagem de futuro projetos" loading="lazy"></a>
                     </div>
                     <div class="back"></div>
                 </div>
-                <!-- Item 4 -->
                 <div class="item" style="--position: 4">
                     <div class="front">
                         <a href="projeto4.html"><img src="imagens/projetos.png" alt="imagem de futuro projetos" loading="lazy"></a>
@@ -135,21 +105,17 @@
                 </div>
             </div>
         </div>
-        <!-- Instrução de navegação -->
         <br>
         <h2 class="txt-navegacao">
             Click nos botões para navegar ou utilize as teclas A e D.
         </h2>
-        <!-- Botões de navegação do carrossel -->
         <div class="bataoFoto">
             <button class="btnAnteFt" id="fotoAnterior"><i class="bi bi-arrow-left-circle-fill"></i> Anterior</button>
             <button class="btnProxFt" id="proximaFoto">Próximo <i class="bi bi-arrow-right-circle-fill"></i></button>
         </div>
     </section>
-    <!-- Seção de contato -->
     <section class="contato" id="contato">
         <h2 class="cabecario">Meu <span>contato!</span></h2>
-        <!-- Formulário de contato -->
         <form id="form-contato">
             <div class="input-box">
                 <input type="text" placeholder="Seu nome" name="nome" required>
@@ -160,32 +126,26 @@
                 <input type="text" placeholder="Assunto do Email" name="assunto" required>
             </div>
             <textarea name="mensagem" cols="30" rows="10" placeholder="Sua mensagem" required></textarea>
-            <!-- Botão para enviar o formulário -->
             <input type="submit" value="Enviar mensagem" class="btn">
             <h2 class="txt-navegacao">
                 Formulário de contato com validação e armazenamento no localStorage.
             </h2>
         </form>
-        <!-- Loader animado para indicar envio -->
         <div id="loader">Enviando...</div>
-        <!-- Área para exibir mensagens de status (sucesso ou erro) -->
         <div id="mensagem-status"></div>
     </section>
-    <!-- Rodapé -->
     <footer class="rodape">
         <div class="texto-rodape">
             <p>2025 by Leonardo Duarte de Lima.</p>
         </div>
-        <!-- Botão para voltar ao topo -->
         <div class="rodape-iconTop">
             <a href="#inicio"><i class="bi bi-caret-up-fill"></i></a>
         </div>
     </footer>
-    <!-- Scripts externos -->
-    <script src="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.js"></script> <!-- Biblioteca de rotas -->
-    <script src='https://npmcdn.com/@turf/turf/turf.min.js'></script> <!-- Biblioteca Turf.js para geoprocessamento -->
-    <script src="js/typed.js@2.0.12.js"></script> <!-- Biblioteca para texto dinâmico -->
-    <script src="js/scrollreveal.js"></script> <!-- Biblioteca de animação ao rolar -->
-    <script src="js/script.js"> </script> <!-- Script personalizado do projeto --> 
+    <script src="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.js"></script>
+    <script src='https://npmcdn.com/@turf/turf/turf.min.js'></script>
+    <script src="js/typed.js@2.0.12.js"></script>
+    <script src="js/scrollreveal.js"></script>
+    <script src="js/script.js"> </script>
 </body>
 </html>

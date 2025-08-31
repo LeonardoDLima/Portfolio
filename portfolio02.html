@@ -1,55 +1,39 @@
 <!DOCTYPE html>
-<html lang="pt-br"> <!-- Define o idioma como português do Brasil -->
+<html lang="pt-br">
 <head>
-    <!-- Configuração de caracteres -->
     <meta charset="UTF-8">
-    <!-- Responsividade para dispositivos móveis -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio | Mapa</title> <!-- Título da aba do navegador -->
-    <link rel="icon" href="favicon.ico" type="ico"><!-- icone da barra de navegação -->
-    <!-- CSS principal -->
+    <title>Portfólio | Mapa</title>
+    <link rel="icon" href="favicon.ico" type="ico">
     <link rel="stylesheet" href="css/style.css">
-    <!-- Ícones do Bootstrap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
-    <!-- CSS do Leaflet (mapa) -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" crossorigin=""/>
-    <!-- CSS do controle de rotas do Leaflet -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.css">
-    <!-- Biblioteca principal do Leaflet (mapa) -->
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" crossorigin=""></script>
 </head>
 <body>
-<!-- Cabeçalho da página -->
 <header class="header header-project">
-    <!-- Logotipo com link para o topo -->
     <a href="https://leonardodlima.github.io/Portfolio/#inicio" class="logo">Portfólio</a>
 </header>
-<!-- Seção de contato que aqui está sendo usada para exibir o mapa -->
 <section class="portfolio" id="portfolio">
-    <!-- Botão para voltar para o portfólio -->
     <div class="bataoVolt">
         <a href="https://leonardodlima.github.io/Portfolio/#portfolio" class="btnVolt" id="voltar">
             <i class="bi bi-arrow-left-circle-fill"></i>  Voltar
         </a>
     </div>
-    <!-- Título da página -->
     <h2 class="cabecario">Sua <span>Distancia!</span></h2>
-    <!-- Área onde será exibida a distância calculada -->
     <div>
         <h1 id="txtDistancia">Sua distancia até mim é:
-            <h1 id="km"></h1> <!-- Distância será preenchida via JS -->
+            <h1 id="km"></h1>
         </h1>
     </div>
-    <!-- Título que será substituído pelo mapa -->
     <h2 id="mapa"></h2>
-    <!-- Container onde o mapa será renderizado -->
     <div id="mapid"></div>
-    <!-- Elemento onde as coordenadas serão exibidas -->
     <div id="distancia"></div>
 </section>
 </body>
 </html>
 
-<script src="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.js"></script> <!-- Controla rotas no mapa -->
-<script src='https://npmcdn.com/@turf/turf/turf.min.js'></script><!-- Biblioteca Turf.js para cálculos geográficos -->
-<script src="js/mapa.js"></script><!-- Script do mapa personalizado -->
+<script src="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.js"></script>
+<script src='https://npmcdn.com/@turf/turf/turf.min.js'></script>
+<script src="js/mapa.js"></script>

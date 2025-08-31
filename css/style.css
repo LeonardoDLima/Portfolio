@@ -160,7 +160,7 @@ h2{
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    width: 10rem;
+    width: 13rem;
     height: 4rem;
     background-color: transparent;
     border-radius: 1rem;
@@ -186,6 +186,9 @@ h2{
 
 .midia-social a:hover {
     box-shadow: 0 0 0.5rem black;
+}
+.bi-facebook, .bi-instagram{
+    margin-right: 3px;
 }
 
 

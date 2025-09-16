@@ -111,6 +111,7 @@ section.inicio {
 
 
 .inicio-img img {
+    box-shadow: rgba(157, 255, 0, 0.12) 0px 2px 4px 0px, rgba(157, 255, 0, 0.32) 0px 2px 16px 0px;
     width: 30vw;
     animation: FloatImage 4s ease-in-out infinite;
 }
